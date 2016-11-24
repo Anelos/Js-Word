@@ -1,0 +1,54 @@
+body {
+    width: 950px;
+    margin: auto;
+    background-image: url("../IMAGES/gradient-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1 {
+    text-align: center;
+}
+table {
+    margin-top: 50px;
+    text-align: center;
+    width: 400px;
+    border: 3px double black;
+    border-spacing: 2px 1px;
+}
+td {
+    height: 30px;
+}
+td:not(.result) {
+    background-color: coral;
+}
+#inputWord {
+    width: 300px;
+    margin: auto;
+}
+#main,
+#history {
+    display: block;
+    top: 100px;
+    position: absolute;
+}
+#history {
+    margin-left: 50%;
+}
+#main {
+    width: 400px;
+    height: 100%;
+}
+#history {
+    width: 300px;
+    height: 100%;
+}
+
+.result {
+    background-color: lightgray;
+}
+#gras {
+    font-weight: bold;
+    color: crimson;
+    height: 50px;
+    font-size: 40px;
+}

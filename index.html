@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<head>
+    <title>JS-Word</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <h1>Jouons avec les mots</h1>
+    <div id="main">
+
+        <div id="inputWord">
+            <label for="setWord">Entrez un mot</label>
+            <br>
+            <input type="text" name="setWord" id="setWord" placeholder="Saisissez votre mot ici.">
+            <input type="submit" name="Envoyez" value="Envoyez" onclick="start()">
+        </div>
+        <div id="wordBoard">
+            <table id="wordBoardTr">
+                <tr>
+                    <th class="result" id="gras" colspan="2"></th>
+                </tr>
+                <tr>
+                    <td>Mot en minuscule</td>
+                    <td>Mot en Majuscule</td>
+                </tr>
+                <tr>
+                    <td class="result" id="min"></td>
+                    <td class="result" id="maj"></td>
+                </tr>
+                <tr>
+                    <td>Nombre de voyelles</td>
+                    <td>Nombre de consonnes</td>
+                </tr>
+                <tr>
+                    <td class="result" id="nbVoy"></td>
+                    <td class="result" id="nbCons"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Mot inversé</td>
+
+                </tr>
+                <tr>
+                    <td colspan="2" class="result" id="inverse"></td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">Est-ce un palindrome?</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="result" id="palin"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="history">
+        <h2>Hitorique</h2>
+        <div id="story">
+
+        </div>
+
+    </div>
+    <script src="JS/js-word.js"></script>
+
+</body>
