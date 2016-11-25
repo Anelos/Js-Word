@@ -32,7 +32,21 @@ function numberOfVoyelles(word) {
     return nbVoyelles;
 }
 
-function start() {
+function isPalindrome(word) {
+    if (invertWord(word).toLowerCase() == word.toLowerCase()) {
+        return "Oui!";
+
+    } else {
+        return "Non!";
+    }
+}
+document.onkeypress = function (e) {
+    if (e.keyCode == "13") {
+        main();
+    }
+}
+
+function main() {
     var story = document.getElementById("story");
     var word = wordInput.value;
     displayInTab("gras", word);
@@ -42,12 +56,11 @@ function start() {
     displayInTab("nbVoy", numberOfVoyelles(word));
     displayInTab("nbCons", nbConsonnes);
     displayInTab("inverse", invertWord(word));
-    if (invertWord(word).toLowerCase() == word.toLowerCase()) {
-        displayInTab("palin", "Oui!");
 
-    } else {
-        displayInTab("palin", "Non!");
-    }
+    displayInTab("palin", isPalindrome(word));
+
+
+
     display(story, word);
     wordInput.value = "";
 }

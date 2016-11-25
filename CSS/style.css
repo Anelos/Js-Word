@@ -32,7 +32,8 @@ td:not(.result) {
     position: absolute;
 }
 #history {
-    margin-left: 50%;
+    margin-left: 70%;
+    width: 30%;
 }
 #main {
     width: 400px;
